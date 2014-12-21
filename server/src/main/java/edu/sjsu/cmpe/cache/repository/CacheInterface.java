@@ -36,5 +36,7 @@ public interface CacheInterface {
      * @return a list of entries
      */
     List<Entry> getAll();
+    
+    void delete(Long key);
 
 }
