@@ -5,11 +5,6 @@ import java.util.List;
 
 public class ClientHandler {
 	
-	public ClientHandler()
-	{
-		
-	}
-	
 	public List<CacheServiceInterface> buildServers()
 	{
 		List<CacheServiceInterface> serverList = new ArrayList<CacheServiceInterface>(); 

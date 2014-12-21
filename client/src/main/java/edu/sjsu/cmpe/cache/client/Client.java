@@ -1,11 +1,8 @@
 package edu.sjsu.cmpe.cache.client;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Future;
 
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
+import java.util.List;
+
 
 public class Client {
 
@@ -20,9 +17,9 @@ public class Client {
         Thread.sleep(30000);
         client.putAsyncAll(serverList,1,"b");
         System.out.println("Sleeping after second put call...");
-        Thread.sleep(90000);
+        Thread.sleep(60000);
        //Get async call 
-        client.asyncGetWithRepair(serverList,1);
+       client.asyncGetWithRepair(serverList,1);
        
     }
 
